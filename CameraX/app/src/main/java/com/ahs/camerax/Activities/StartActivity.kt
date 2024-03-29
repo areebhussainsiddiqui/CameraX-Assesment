@@ -22,7 +22,8 @@ class StartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_start)
-
+        binding.textView.text = resources.getString(R.string.data)
+        binding.iv.setImageResource(R.drawable.task)
         binding.btnStarted.setOnClickListener {
             if (allPermissionsGranted()) {
                 startCamera()

@@ -16,7 +16,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
             android:gravity="center"
-            android:text="@string/data"
             android:textColor="@color/black"
             android:textSize="@dimen/_19sdp"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:scaleType="fitXY"
-            android:src="@drawable/task"
+            android:id="@+id/iv"
             app:layout_constraintBottom_toTopOf="@+id/btnStarted"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
